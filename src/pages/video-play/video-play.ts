@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
 
 /**
@@ -15,10 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'video-play.html',
 })
 export class VideoPlayPage {
-
+  @ViewChild('article') article:ElementRef;
+  public tabs:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
+  //当将要进入页面时触发
+  ionViewDidEnter() {
+    this.tabs = document.getElementsByClassName("tabbar")[0];
+    this.tabs.style.display = 'none';
+  }
 
+  ionViewWillLeave(){
+    this.tabs = document.getElementsByClassName("tabbar")[0];
+    this.tabs.style.display = 'flex';
+  }
 
 }

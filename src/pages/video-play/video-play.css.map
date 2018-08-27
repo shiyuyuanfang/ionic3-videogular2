@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACE,6BAAa;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;AAEf,gCAAgB;EACd,OAAO,EAAE,eAAe",
+"mappings": "AACE,6BAAa;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK",
 "sources": ["video-play.scss"],
 "names": [],
 "file": "video-play.css"
