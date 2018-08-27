@@ -1,0 +1,60 @@
+<!--
+  Generated template for the VideoPlayPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>videogular2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <article class="video-player">
+
+    <vg-player>
+      <vg-overlay-play></vg-overlay-play>
+      <vg-buffering></vg-buffering>
+      <vg-controls>
+
+        <!--点击视频任意处暂停、播放-->
+        <vg-play-pause></vg-play-pause>
+
+        <!--倍速播放-->
+        <!--<vg-playback-button></vg-playback-button>-->
+
+        <!-- vgProperty="current" 播放时间递增；  vgProperty="left"播放时间递减 -->
+        <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+
+        <!--进度条 [vgSlider]="true" 显示滑块; [vgSlider]="false" 不显示滑块-->
+        <vg-scrub-bar>
+          <vg-scrub-bar-current-time [vgSlider]="false"></vg-scrub-bar-current-time>
+          <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+        </vg-scrub-bar>
+
+        <!--视频总时长-->
+        <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+
+
+        <vg-mute></vg-mute><!--声音按钮-->
+        <!--<vg-volume></vg-volume>&lt;!&ndash;声音 音量柱&ndash;&gt;-->
+
+        <vg-fullscreen></vg-fullscreen> <!--全屏屏按钮-->
+
+      </vg-controls>
+      <video #myMedia [vgMedia]="myMedia" height="210" preload="auto" poster="assets/icon/test-cover.jpg" crossorigin playsinline webkit-playsinline >
+        <source src="http://1252122025.vod2.myqcloud.com/8e0ee81dvodtransgzp1252122025/b93b72525285890781396061924/v.f10722.mp4?sign=a75e8394ea217b299afd47b1b493dae3&t=5b801070" type="video/mp4">
+      </video>
+    </vg-player>
+
+
+
+  </article>
+
+
+</ion-content>

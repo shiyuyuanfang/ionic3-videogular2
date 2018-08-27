@@ -1,0 +1,14 @@
+//底部导航栏tabbar图标和字体被选中是的颜色
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon{
+  color: #ef4044!important;
+}
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true]{
+  color: #ef4044!important;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+  color: #ef4044!important;
+}
+.tabs-md .tab-button[aria-selected=true]{
+  color: #ef4044!important;
+}

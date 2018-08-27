@@ -1,0 +1,7 @@
+page-video-play .video-player {
+  width: 100%;
+  height: 250px; }
+page-video-play .tabs-md .tabbar {
+  display: none !important; }
+
+/*# sourceMappingURL=video-play.css.map */
