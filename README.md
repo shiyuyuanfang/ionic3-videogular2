@@ -74,7 +74,7 @@ This is a starter template for [Ionic](http://ionicframework.com/docs/) projects
 
 5、注意：
       在第一步中执行命令 npm install videogular2 --save 时安装的是最新版本的videogular2，它是基于最新的angular版本，否做会报错的可能性较大。
-      例如：我在初次接触videogular2时，我的ionic3项目基于angular4.x，但当时angular6刚刚发布，所以在执行npm install videogular2 --save后其实安装的  videogular2就已经是基于angular6了，所以在我的项目中就会报错，还好当时有一个大神与我遇到了同一个问题，经过他的研究得出在我angular5版本的ionic3项目中执行npm install videogular2@6.1.1 --save即指定安装的videogular2版本，不安装最新版本即可。
+      例如：我在初次接触videogular2时，我的ionic3项目基于angular4.x，但当时angular6刚刚发布，所以在执行npm install videogular2 --save后其实安装的  videogular2就已经是基于angular6了，所以在我的项目中就会报错，还好当时有一个大神与我遇到了同一个问题，经过他的研究得出在我angular4.x版本的ionic3项目中执行npm install videogular2@6.1.1 --save即指定安装的videogular2版本，不安装最新版本即可。
 
 
 
