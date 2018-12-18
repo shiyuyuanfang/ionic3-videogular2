@@ -60,16 +60,32 @@ This is a starter template for [Ionic](http://ionicframework.com/docs/) projects
     <vg-overlay-play></vg-overlay-play>
     <vg-buffering></vg-buffering>
     <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
-      <vg-play-pause></vg-play-pause>
-      <vg-time-display [vgProperty]="'current'"></vg-time-display>
+    
+      <vg-play-pause></vg-play-pause> <!--点击视频任意处暂停、播放-->
+      
+			<!--<vg-playback-button></vg-playback-button>--> <!--倍速播放-->
+      
+      <!-- vgProperty="current" 播放时间递增;vgProperty="left"播放时间递减 -->
+      <vg-time-display [vgProperty]="'current'" vgFormat="mm:ss"></vg-time-display>
+      
+      <!--进度条 [vgSlider]="true" 显示滑块; [vgSlider]="false" 不显示滑块-->
       <vg-scrub-bar>
         <vg-scrub-bar-current-time [vgSlider]="true"></vg-scrub-bar-current-time>
         <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
       </vg-scrub-bar>
-      <vg-time-display [vgProperty]="'total'"></vg-time-display>
+      
+      <vg-time-display [vgProperty]="'total'" vgFormat="mm:ss"></vg-time-display><!--视频总时长-->
+      
+      <!--声音按钮 声音 音量柱-->
+      <!--<vg-mute></vg-mute>-->
+      <!--<vg-volume></vg-volume>-->
+      
+      <!--全屏按钮-->
       <vg-fullscreen></vg-fullscreen>
+      
     </vg-controls>
     <video #media [vgMedia]="media" poster="你的poster" src="你的src" autoplay></video>
+    
   </vg-player>
 
 5、注意：
